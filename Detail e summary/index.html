@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail e summary</title>
+</head>
+<body>
+    
+    <h1>Detail e summary</h1>
+
+    <details>
+        <summary>O que é o elemento details?</summary>
+        <p>O elemento <code>&lt;details&gt;</code> é usado para criar um widget interativo que pode ser expandido ou recolhido pelo usuário. Ele é frequentemente utilizado para ocultar ou mostrar informações adicionais, como detalhes de um produto, perguntas frequentes, ou qualquer conteúdo que possa ser opcional para o usuário.</p>
+    </details>
+    <details>
+        <summary>Como usar o elemento details?</summary>
+        <p>Para usar o elemento <code>&lt;details&gt;</code>, basta envolver o conteúdo que você deseja ocultar ou mostrar dentro da tag. O elemento <code>&lt;summary&gt;</code> é usado para definir o título ou a descrição do conteúdo oculto. Quando o usuário clicar no resumo, o conteúdo dentro do <code>&lt;details&gt;</code> será exibido ou ocultado.</p>
+    </details>
+    <details>
+        <summary>Quais são os atributos do elemento details?</summary>
+        <p>O elemento <code>&lt;details&gt;</code> suporta os seguintes atributos:</p>
+        <ul>
+            <li><code>open</code>: Define se o conteúdo do detalhe está visível ou oculto.</li>
+            <li><code>id</code>: Especifica um identificador único para o elemento.</li>
+            <li><code>class</code>: Especifica uma ou mais classes para o elemento, permitindo a aplicação de estilos CSS.</li>
+        </ul>
+    </details>
+
+    <h2>Aplicando Datalist</h2>
+
+    <form>
+        <input list="carros" nome="carro" placeholder="Digite o nome de algum carro">
+        <datalist id="carros">
+            <option value="Gol">
+            <option value="Uno">
+            <option value="Celta">
+            <option value="Palio">
+            <option value="Corsa">
+        </datalist>
+    </form>
+
+</body>
+</html>
