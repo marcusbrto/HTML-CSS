@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    /* border-box: é o modelo de caixa onde a largura e altura do elemento incluem o conteúdo, o padding e a borda. Isso significa que, ao definir a largura e altura de um elemento, o padding e a borda serão incluídos dentro dessas dimensões, em vez de serem adicionados a elas. */
+}
+
+.container{
+    background-color: #121212;
+    width: 700px;
+    color: white;
+    /* margin: é a parte de fora; */
+    margin: auto;
+
+    /* padding: é a parte de dentro; */
+    padding: 50px;
+    /* border: é a borda/separação entre eles; */
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.rede-social h2{
+   text-align: center;
+    
+}
+.rede-social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.rede-social a{
+    text-decoration: none;
+    color: gold;
+}
+.rede-social a:hover{
+    color: red;
+}

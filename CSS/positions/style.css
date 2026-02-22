@@ -1,0 +1,71 @@
+/*
+    reset: é uma técnica usada para remover as margens, preenchimentos e outros estilos padrão aplicados pelos navegadores aos elementos HTML. Isso é feito para garantir que os estilos sejam consistentes em diferentes navegadores e para facilitar a aplicação de estilos personalizados.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+    /* border-box: é o modelo de caixa onde a largura e altura do elemento incluem o conteúdo, o padding e a borda. Isso significa que, ao definir a largura e altura de um elemento, o padding e a borda serão incluídos dentro dessas dimensões, em vez de serem adicionados a elas. */
+
+body{
+    height: 180vh;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #121212;
+    width: 700px;
+    color: white;
+    /* margin: é a parte de fora; */
+    margin: auto;
+
+    /* padding: é a parte de dentro; */
+    padding: 50px;
+    /* border: é a borda/separação entre eles; */
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.area{
+    background-color: #121212;
+    width: 700px;
+    color: white;
+    /* margin: é a parte de fora; */
+    margin: auto;
+
+    /* padding: é a parte de dentro; */
+    padding: 50px;
+    /* border: é a borda/separação entre eles; */
+    border: 5px solid red;
+    border-radius: 10px;
+    position: static;
+}
+/*
+    > Padrão de posicionamento: static (padrão)
+
+    > relative: relativo ao seu próprio posicionamento original (permite usar top, bottom, left, right para ajustar a posição em relação ao seu local original)
+
+    > absolute: posicionado em relação ao seu elemento pai mais próximo que tenha posição relativa, absoluta ou fixa (permite usar top, bottom, left, right para ajustar a posição em relação ao elemento pai)
+
+    > fixed: posicionado em relação à janela de visualização (permite usar top, bottom, left, right para ajustar a posição em relação à janela de visualização) 
+
+    > sticky: posicionado com base na posição de rolagem do usuário (permite usar top, bottom, left, right para ajustar a posição em relação à posição de rolagem do usuário)
+*/
+
+.area{
+    position: fixed;
+    bottom: 0;
+    left: 80px;
+
+    border: 5px solid green;
+}
+
+header{
+    background-color: blueviolet;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}

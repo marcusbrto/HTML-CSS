@@ -1,0 +1,41 @@
+/*
+    reset: é uma técnica usada para remover as margens, preenchimentos e outros estilos padrão aplicados pelos navegadores aos elementos HTML. Isso é feito para garantir que os estilos sejam consistentes em diferentes navegadores e para facilitar a aplicação de estilos personalizados.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+    /* border-box: é o modelo de caixa onde a largura e altura do elemento incluem o conteúdo, o padding e a borda. Isso significa que, ao definir a largura e altura de um elemento, o padding e a borda serão incluídos dentro dessas dimensões, em vez de serem adicionados a elas. */
+
+body{
+    height: 180vh;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    height: 500px;
+    margin: 50px;   
+    
+    /* 
+        ativando flexbox no container, os itens filhos se tornam flexíveis e podem ser organizados de acordo com as propriedades do flexbox.
+    */
+    display: flex;
+    flex-direction: row;
+}
+.area{
+    width: 100px;
+    height: 100px;
+}
+.item-1{
+    background-color: red;
+}
+.item-2{
+    background-color: blue;
+}
+.item-3{
+    background-color: green;
+}

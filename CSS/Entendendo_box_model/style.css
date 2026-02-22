@@ -1,0 +1,14 @@
+
+.container{
+    background-color: #121212;
+    width: 700px;
+    color: white;
+    /* margin: é a parte de fora; */
+    margin: auto;
+
+    /* padding: é a parte de dentro; */
+    padding: auto;
+    /* border: é a borda/separação entre eles; */
+    border: 5px solid red;
+    border-radius: 10px;
+}
