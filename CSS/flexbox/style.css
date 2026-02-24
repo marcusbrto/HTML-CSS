@@ -25,17 +25,24 @@ body{
     */
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
 }
 .area{
     width: 100px;
     height: 100px;
+
+    font-size: 25px;
 }
 .item-1{
     background-color: red;
 }
 .item-2{
     background-color: blue;
+    align-self: flex-start;
 }
 .item-3{
     background-color: green;
+    align-self: end;
 }
