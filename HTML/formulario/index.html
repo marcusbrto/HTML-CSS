@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <!-- Os inputs que forem obrigatorios nos adicionamos o atributo required -->
+
+    <!-- Fildset cria um grupo -->
+    <fieldset>
+        <!-- Legend é meio que o titulo do grupo -->
+        <legend>Endereço</legend>
+        <form action="./formulario-enviado.html">
+          <p>
+            <label for="input-rua">Rua:</label>
+            <input id="input-rua" type="text" name="rua" />
+          </p>
+          <!-- INPUT DE NUMERO -->
+          <p>
+            <label for="input-number">Numero:</label>
+            <input
+              id="input-number"
+              type="number"
+              min="0"
+              max="100"
+              name="number"
+            />
+          </p>
+
+    </fieldset>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+          <label for="input-email">Email:</label>
+          <input required id="input-email" type="email" name="email" />
+        </p>
+        <!-- INPUT DE TELEFONE -->
+        <p>
+          <label for="input-telefone">Telefone:</label>
+          <input
+            id="input-telefone"
+            type="telefone"
+            name="telefone"
+            pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"
+            placeholder="(99) 9999-9999"
+          />
+        </p>
+    </fieldset>
+      <!-- INPUT DE EMAIL -->
+      <!-- INPUT DE BUSCA -->
+      <p>
+        <label for="input-busca">Busca:</label>
+        <input id="input-busca" type="search" name="busca" />
+      </p>
+      <!-- INPUT DE URL -->
+      <p>
+        <label for="input-url">URL:</label>
+        <input id="input-url" type="url" name="url" />
+      </p>
+      <!-- INPUT DE SENHA -->
+      <p>
+        <label for="input-senha">Senha:</label>
+        <input id="input-senha" type="password" name="senha" />
+      </p>
+      <!-- INPUT DE DATA -->
+      <p>
+        <label for="input-data">Data:</label>
+        <input id="input-data" type="date" name="data" />
+      </p>
+      <!-- INPUT DE DATA E HORA-->
+      <p>
+        <label for="input-data-hora">Data e Hora:</label>
+        <input id="input-data-hora" type="datetime-local" name="data-hora" />
+      </p>
+      <!-- INPUT DE HORA-->
+      <p>
+        <label for="input-hora">Hora:</label>
+        <input id="input-hora" type="time" name="hora" />
+      </p>
+      <!-- INPUT DE MES -->
+      <p>
+        <label for="input-mes">Mes:</label>
+        <input id="mes" type="month" name="mes" />
+      </p>
+      <!-- INPUT DE SEMANA -->
+      <p>
+        <label for="input-semana">Semana:</label>
+        <input id="semana" type="week" name="semana" />
+      </p>
+      <!-- Checkbox -->
+      <p>
+        <label for="termos">
+          <input id="termos" type="checkbox" name="termos" /> Li e aceito os
+          termos de uso
+        </label>
+      </p>
+      <!-- Radio -->
+
+      <!-- Nesse caso como os dois radios tem o mesmo nome só pode ter um deles ativo por vez-->
+      <p>
+        <label for="sim">
+          <input id="sim" type="radio" name="aceito" /> Sim
+        </label>
+        <label for="nao">
+          <input id="nao" type="radio" name="aceito" /> Não
+        </label>
+      </p>
+      <!-- COR -->
+      <p>
+        <label for="input-cor">Cor:</label>
+        <input id="cor" type="color" name="cor" />
+      </p>
+      <!-- FILE -->
+
+      <!-- Se quiser pode adicionar o atributo accept que define o que o file aceita, podendo colocar por formato de arquivo, ex: .mp3,.mp4,.png -->
+      <p>
+        <label for="input-arquivo">Arquivo:</label>
+        <input id="arquivo" type="file" name="arquivo" />
+      </p>
+
+      <!-- RANGE -->
+
+      <!-- pode ser definido os atributos min e max para definir o começo e fim  e tambem o step para por exemplo ir pulando em 2 em 2-->
+      <p>
+        <label for="input-range">Range:</label>
+        <input id="range" type="range" name="range" />
+      </p>
+
+      <!-- HIDDEN -->
+
+       <!-- O hidden manda uma informacao escondida do usuario, nesse caso por exemplo foi enviado um numero de protocolo, podendo ser visualizado somente com o inspecionar -->
+      <p>
+        <input type="hidden" name="protocolo" value="000123" />
+      </p>
+
+      <!-- Text area -->
+      <!-- <p>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem">Mensagem</textarea>
+      </p> -->
+
+      <!-- Opcoes -->
+       <!-- Pode adicionar o atributo multiple na tag de select para poder selecionar varios -->
+      <p>
+        <label for="opcoes">Opções</label>
+        <select id="opcoes" name="opcoes">
+            <option value="1">Opcao 1</option>
+            <option value="2">Opcao 2</option>
+            <option value="3">Opcao 3</option>
+        </select>
+      </p>
+
+      <!-- Input de envio e de reset -->
+
+      <!-- semanticamente para botoes o correto é usar a tag button mas por fins de estudo coloquei o input aqui -->
+      <p>
+        <input type="submit" value="Enviar dados">
+        <input type="reset" value="Limpar">
+      </p>
+
+      <!-- Botao de envio -->
+      <button type="submit" value="botao de envio">Enviar</button>
+      <!-- Botao de reset -->
+      <button type="reset" value="botao de reset">Reset</button>
+    </form>
+  </body>
+</html>
