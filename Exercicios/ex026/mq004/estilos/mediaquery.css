@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* Outras mídias */
+
+@media print {
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  main{
+    border: 2px solid black;
+  }
+  main > h1 {
+    text-shadow: none;
+    color: black;
+  }
+  main::after{
+    content: "Essa impressão foi feita através do site do Marcola";
+  }
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: block;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* TABLET */
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* DESKTOP */
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: block;
+  }
+  #tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* TELAS GRANDES */
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+  main{
+    width: 600px;
+  }
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #print {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: block;
+  }
+}
