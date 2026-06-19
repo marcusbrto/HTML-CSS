@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        .container{
+            background-color: lightcoral;
+            
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .A{
+            order: 0;
+        }
+        .B{
+            order: -2;
+        }
+        .C{
+            order: 4;
+        }
+        .D{
+            order: 8;
+        }
+        .E{
+            order: 2;
+        }
+        .F{
+            order: 1;
+        }
+        .G{
+            order: -4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item A">A</div>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        <div class="item E">E</div>
+        <div class="item F">F</div>
+        <div class="item G">G</div>
+    </div>
+</body>
+</html>
